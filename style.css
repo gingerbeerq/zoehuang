@@ -96,7 +96,6 @@ p.subtitle{
     background-color: white;
     font-size: 2.5rem;
     text-transform: uppercase;
-    letter-spacing: .1rem;
     margin-top: 30px;
     transition: .3s ease;
     transition-property: white, color;
@@ -912,7 +911,7 @@ h2.info-title span{
         margin-top: 2rem;
     }
     .cta{
-        font-size: 1.8rem;
+        font-size: 2rem;
         padding: 10px 30px;
     }
     h1.section-title{

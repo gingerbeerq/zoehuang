@@ -289,7 +289,6 @@ p.case-desc{
     width: 60px;
     display: inline-block;
     border: 3px solid white;
-    border-radius: 50%;
     z-index: 100;
     display: flex;
     align-items: center;
@@ -304,7 +303,6 @@ p.case-desc{
     position: absolute;
     height: 100%;
     width: 100%;
-    border-radius: 50%;
     border: 3px solid white;
     animation: hamburger_pulse 1s ease infinite;
 }
@@ -521,6 +519,7 @@ p.subheading{
     background-color: transparent;
     color: var(--secondary-blue);
     border: 3px solid var(--secondary-blue);
+    border-radius: 50%;
     font-size: 2rem;
     font-weight: 600;
     padding: .5em;
@@ -805,7 +804,7 @@ h2.info-title span{
     margin: 0 auto;
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: space-around;
     align-items: center;
     border-radius: 20px;
     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.336);
@@ -814,12 +813,18 @@ h2.info-title span{
 #contact .container .inside .contact-items{
     display: flex;
     flex-direction: row;
-    margin-bottom: 30px;
+    align-items: center;
+    justify-content: space-around;
+    height: 300px;
+    margin: 0 auto;
 }
 #contact .contact-items .contact-item{
     text-align: center;
     align-items: center;
-    padding: 30px;
+    max-width: 300px;
+    width: 200px;
+    padding: 10px;
+    margin: 0 30px;
 }
 #contact .icon svg{
     width: 60px;
@@ -1018,6 +1023,7 @@ h2.info-title span{
     #contact .container .inside .contact-items{
         display: flex;
         flex-direction: column;
+        height: 500px;
     }
     /* End Contact */
     #case .container .top{

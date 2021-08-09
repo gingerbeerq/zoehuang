@@ -720,6 +720,9 @@ h2.item-title{
     width: 100%;
     margin-bottom: 30px;
     position: relative;
+    animation: moveInLeft 1s ease-in-out;
+    animation-delay: 3s;
+    animation-fill-mode: backwards;
 }
 #projects .project-bottom .project-item .code{
     content: '';
@@ -729,7 +732,6 @@ h2.item-title{
     color: var(--secondary-gray);
     font-size: 8rem;
     z-index: -1;
-    animation: reveal 1s ease-in-out forwards;
 }
 #projects .project-bottom .project-item .project-info{
     max-width: 90%;
@@ -738,9 +740,6 @@ h2.item-title{
     margin-bottom: 30px;
     padding-right: 60px;
     line-height: 3rem;
-    opacity: 0;
-    animation: fade .3s ease-in forwards;
-    animation-delay: 2s;
 }
 #projects .project-img{
     width: 100%;
@@ -895,12 +894,27 @@ h2.info-title span{
 @keyframes moveInRight{
     0%{
         transform: translateX(100px);
+        opacity: 0;
     }
     80%{
         transform: translateX(-10px);
     }
     100%{
         transform: translate(0);
+        opacity: 1;
+    }
+}
+@keyframes moveInLeft{
+    0%{
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+    80%{
+        transform: translateX(10px);
+    }
+    100%{
+        transform: translate(0);
+        opacity: 1;
     }
 }
 @keyframes fadeInLeft{

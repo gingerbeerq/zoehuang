@@ -90,6 +90,7 @@ p.subtitle{
 
 .cta{
     display: inline-block;
+    border-radius: 20rem;
     color: var(--primary-color);
     padding: 5px 10px;
     border: 2px solid var(--primary-color);
@@ -650,9 +651,10 @@ p.txt{
     transition: .3s ease box-shadow;
     position: relative;
     background-color: white;
-
+}
+#skills:hover .container .skill-item{
     animation: moveInBottom 1s ease-out;
-    animation-delay: 2s;
+    animation-delay: .5s;
     animation-fill-mode: backwards;
 }
 #skills .container .skill-item:hover{
@@ -720,8 +722,9 @@ h2.item-title{
     width: 100%;
     margin-bottom: 30px;
     position: relative;
+}
+#projects:hover .project-bottom .project-item .project-info{
     animation: moveInLeft 1s ease-in-out;
-    animation-delay: 3s;
     animation-fill-mode: backwards;
 }
 #projects .project-bottom .project-item .code{
@@ -748,9 +751,10 @@ h2.item-title{
     flex-basis: 100%;
     object-fit: cover;
     border-radius: 10px;
-
+}
+#projects:hover .project-img{
+    animation-delay: .5s;
     animation: moveInRight 1s ease-in-out;
-    animation-delay: 3s;
     animation-fill-mode: backwards;
 }
 #projects .project-img img{

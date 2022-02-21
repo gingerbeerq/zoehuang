@@ -806,6 +806,18 @@ h2.info-title span{
     animation: reveal 1s ease-in-out forwards;
 }
 
+.video {
+    vertical-align: middle;
+    height: 100%;
+    width: 100%;
+}
+.video__content {
+    height: 100%;
+    width: 100%;
+    object-position: 50% 50%;
+    object-fit: cover; 
+}
+
 /* End Projects Section */
 
 /* Contact Section */

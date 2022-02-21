@@ -40,7 +40,7 @@ body{
 }
 .scroll-top svg {
     width: 50%;
-    color: black;
+    color: white;
     pointer-events: none;
 }
 .scroll-top:hover {

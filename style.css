@@ -92,7 +92,7 @@ p.subtitle{
     display: inline-block;
     border-radius: 20rem;
     color: var(--primary-color);
-    padding: 5px 10px;
+    padding: 8px 16px;
     border: 2px solid var(--primary-color);
     background-color: white;
     font-size: 2.5rem;
@@ -104,6 +104,7 @@ p.subtitle{
 .cta:hover{
     color: white;
     background-color: var(--primary-color);
+    box-shadow: 0px 0px 5px 0 #0000002c;
 }
 .primary-btn{
     display: inline-block;

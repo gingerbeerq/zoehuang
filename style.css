@@ -65,11 +65,12 @@ p{
     color: var(--secondary-blue);
 }
 p.subtitle{
-    font-size: 1.8rem;
+    font-size: 2.4rem;
     font-weight: 500;
     text-transform: uppercase;
     letter-spacing: .7rem;
     color: var(--primary-color);
+   
 }
 .container{
     min-height: 100vh;
@@ -90,21 +91,25 @@ p.subtitle{
 
 .cta{
     display: inline-block;
-    border-radius: 20rem;
-    color: var(--primary-color);
+    border-radius: 1rem;
+    color: white;
     padding: 8px 16px;
     border: 2px solid var(--primary-color);
-    background-color: white;
     font-size: 2.5rem;
     text-transform: uppercase;
     margin-top: 30px;
     transition: .3s ease;
     transition-property: white, color;
+    background: linear-gradient(#a2cdd5,#78c2c4);
+    box-shadow: 0px 0px 5px 0 #78c2c4;
 }
 .cta:hover{
     color: white;
     background-color: var(--primary-color);
-    box-shadow: 0px 0px 5px 0 #0000002c;
+    background: linear-gradient(#78c2c4, #5ca3a5 );
+}
+.cta:active{
+    color: #2a5470;
 }
 .primary-btn{
     display: inline-block;
@@ -112,13 +117,16 @@ p.subtitle{
     color: white;
     font-size: 1.8rem;
     padding: .6em 1.6em;
-    border-radius: 50px;
-    box-shadow: 0px 0px 5px 0 #0000002c;
+    border-radius: 1rem;
+    box-shadow: 0px 0px 5px 0 #78c2c4;
 }
 .primary-btn:hover{
     background-color: var(--secondary-blue);
-    box-shadow: 0px 0px 20px 0 #0000002c;
 }
+.primary-btna:active{
+    background-color: var(--secondary-blue);
+}
+
 .secondery-btn{
     display: inline-block;
     background-color: transparent;
@@ -293,6 +301,7 @@ p.case-desc{
 #header .nav-list ul li:hover a{
     color: white;
     font-weight: 600;
+    border-bottom: .5rem solid white;
 }
 
 #header .hamburger{
